@@ -16,8 +16,14 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+// Hapus @SpringBootTest, ganti dengan ini jika Anda menggunakan Mockito
+@ExtendWith(MockitoExtension.class)
 class CustomErrorControllerTest {
+    // ... isi tes Anda sama seperti sebelumnya
+
 
         @Test
         @DisplayName("Mengembalikan response error dengan status 500")
